@@ -12,17 +12,19 @@ import net.votreil.votresvanilla.VotresVanilla;
 
 public class ModItems {
 
-    public static final Item EMERALD_SHARD = registerItem("emerald_shard", new Item(new Item.Settings()
+    public static final Item COPPER_HORN = registerItem("copper_horn",
+            new Item(new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(VotresVanilla.MOD_ID, "copper_horn")))));
+    public static final Item EMERALD_SHARD = registerItem("emerald_shard",
+            new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(VotresVanilla.MOD_ID, "emerald_shard")))));
-    public static final Item COPPER_HORN = registerItem("copper_horn", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(VotresVanilla.MOD_ID, "copper_horn")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(VotresVanilla.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        VotresVanilla.LOGGER.info("Registering Mod Items for" + VotresVanilla.MOD_ID);
+        VotresVanilla.LOGGER.info("Registering Mod Items for " + VotresVanilla.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(COPPER_HORN);
