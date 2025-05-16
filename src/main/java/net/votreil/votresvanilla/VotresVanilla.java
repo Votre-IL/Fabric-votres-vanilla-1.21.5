@@ -2,6 +2,7 @@ package net.votreil.votresvanilla;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.votreil.votresvanilla.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +13,6 @@ public class VotresVanilla implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
