@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "votresvanilla",
+	"version": "${version}",
+	"name": "Votre's Vanilla",
+	"description": "This mod is my attempt at including a few things that fit the general vibe of the game, taking up on leads, crumbs and other stuff left here and there by Mojang.",
+	"authors": [
+		"Votre_IL"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/votresvanilla/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.votreil.votresvanilla.VotresVanilla"
+		],
+		"fabric-datagen": [
+			"net.votreil.votresvanilla.VotresVanillaDataGenerator"
+		],
+		"client": [
+			"net.votreil.votresvanilla.VotresVanillaClient"
+		]
+	},
+	"mixins": [
+		"votresvanilla.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
