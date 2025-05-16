@@ -31,9 +31,11 @@ public class ModBlocks {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(VotresVanilla.MOD_ID, name), block);
     }
-    private static void registerBlockItem(String name, Block block) {
+    public static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(VotresVanilla.MOD_ID, name),
-                new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()));
+                new BlockItem(block, new Item.Settings()
+                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(VotresVanilla.MOD_ID, name)))
+                        .useBlockPrefixedTranslationKey()));
     }
     public static void registerModBlocks() {
         VotresVanilla.LOGGER.info("Registering Mod Blocks for "+ VotresVanilla.MOD_ID);
