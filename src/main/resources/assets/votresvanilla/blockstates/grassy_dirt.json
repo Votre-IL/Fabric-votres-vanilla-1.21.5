@@ -1,17 +1,18 @@
 {
   "variants": {
-    "":
-    {
-      "model": "votresvanilla:block/grassy_dirt"
-    },{
-      "model": "votresvanilla:block/grassy_dirt",
-      "y": 90
-    },{
-      "model": "votresvanilla:block/grassy_dirt",
-      "y": 180
-    }, {
-      "model": "votresvanilla: block/grassy_dirt",
-      "y": 270
-    }
+    "": [
+      {
+        "model": "votresvanilla:block/grassy_dirt"
+      },{
+        "model": "votresvanilla:block/grassy_dirt",
+        "y": 90
+      },{
+        "model": "votresvanilla:block/grassy_dirt",
+        "y": 180
+      }, {
+         "model": "votresvanilla: block/grassy_dirt",
+          "y": 270
+      }
+  ]
   }
 }

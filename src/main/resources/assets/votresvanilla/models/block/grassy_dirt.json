@@ -1,11 +1,11 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/block",
   "textures": {
-    "particle": "block/dirt",
-    "bottom": "block/dirt",
+    "particle": "minecraft:block/dirt",
+    "bottom": "minecraft:block/dirt",
     "top": "votresvanilla:block/grassy_dirt_top",
-    "side": "block/dirt",
-    "overlay": "votresvanilla:block/grassy_dirt_overlay"
+    "side": "minecraft:block/dirt",
+    "overlay": "votresvanilla:block/grassy_dirt_top_overlay"
   },
   "elements": [
     {   "from": [ 0, 0, 0 ],
@@ -22,10 +22,7 @@
     {   "from": [ 0, 0, 0 ],
       "to": [ 16, 16, 16 ],
       "faces": {
-        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "north" },
-        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "south" },
-        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "west" },
-        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "east" }
+        "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "up" },
       }
     }
   ]
