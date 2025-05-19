@@ -26,6 +26,12 @@ public class ModBlocks {
                     .requiresTool()
                     .strength(1.5f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)));
+    public static final Block GRASSY_DIRT = registerBlock("grassy_dirt",
+            new Block(AbstractBlock.Settings.create()
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VotresVanilla.MOD_ID, "grassy_dirt")))
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .strength(0.5f)
+                    .sounds(BlockSoundGroup.GRAVEL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -42,6 +48,9 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(CUT_ANDESITE);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(GRASSY_DIRT);
         });
     }
 }
