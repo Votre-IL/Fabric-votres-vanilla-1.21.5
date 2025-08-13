@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "votresvanilla:block/fine_purple_glazed_terracotta_0"
+  }
+}
