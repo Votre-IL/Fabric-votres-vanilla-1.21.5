@@ -32,6 +32,13 @@ public class ModBlocks {
                     .mapColor(MapColor.DIRT_BROWN)
                     .strength(0.5f)
                     .sounds(BlockSoundGroup.GRAVEL)));
+    public static final Block FINE_WHITE_GLAZED_TERRACOTTA = registerBlock("fine_white_glazed_terracotta",
+            new Block(AbstractBlock.Settings.create()
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VotresVanilla.MOD_ID, "fine_white_glazed_terracotta")))
+                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25f, 4.2f)
+                    .sounds(BlockSoundGroup.STONE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -48,6 +55,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(CUT_ANDESITE);
+            entries.add(FINE_WHITE_GLAZED_TERRACOTTA);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(GRASSY_DIRT);

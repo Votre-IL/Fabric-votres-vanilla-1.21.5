@@ -1,8 +1,8 @@
 {
-  "item.votresvanilla.copper_horn": "Copper Horn",
-  "item.votresvanilla.emerald_shard": "Emerald Shard",
-
   "block.votresvanilla.cut_andesite": "Cut Andesite",
-  "block.votresvanilla.grassy_dirt": "Grassy Dirt"
+  "block.votresvanilla.fine_white_glazed_terracotta": "Fine White Glazed Terracotta",
+  "block.votresvanilla.grassy_dirt": "Grassy Dirt",
 
+  "item.votresvanilla.copper_horn": "Copper Horn",
+  "item.votresvanilla.emerald_shard": "Emerald Shard"
 }
