@@ -11,7 +11,8 @@ public class VotresVanillaClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x3495eb, ModBlocks.GRASSY_DIRT);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex)
+                        -> 0x3495eb, ModBlocks.GRASSY_DIRT);
 
     }
 }
