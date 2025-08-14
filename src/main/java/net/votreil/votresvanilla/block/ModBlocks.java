@@ -256,6 +256,13 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .strength(1.25f, 4.2f)
                     .sounds(BlockSoundGroup.STONE)));
+    public static final Block STONY_DIRT = registerBlock("stony_dirt",
+            new Block(AbstractBlock.Settings.create()
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(VotresVanilla.MOD_ID, "stony_dirt")))
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .instrument(NoteBlockInstrument.HARP)
+                    .strength(0.5f)
+                    .sounds(BlockSoundGroup.GRAVEL)));
 
 
     private static Block registerBlock(String name, Block block) {
